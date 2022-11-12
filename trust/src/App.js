@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Fragment>
-        <section>
+        <section className='app-container'>
           <Header></Header>
           <Routes>
             <Route exact path='/' element={<Hem />} />
