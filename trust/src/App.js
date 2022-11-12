@@ -1,5 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
-import logo from './logo.svg';
+import React, { Fragment } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header';
