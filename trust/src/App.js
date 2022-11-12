@@ -1,24 +1,30 @@
+import React, { Fragment, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './Components/Header';
+import Hem from './Components/Hem';
+import Galleri from './Components/Galleri';
+import Tjanster from './Components/Tjanster';
+import Kontakt from './Components/Kontakt';
+import OmOss from './Components/OmOss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Fragment>
+        <section>
+          <Header></Header>
+          <Routes>
+            <Route exact path='/' element={<Hem />} />
+            <Route exact path='/tjänster' element={<Tjanster />} />
+            <Route exact path='/kontakt' element={<Kontakt />} />
+            <Route exact path='/galleri' element={<Galleri />} />
+            <Route exact path='/omoss' element={<OmOss />} />
+          </Routes>
+        </section>
+      </Fragment>
+    </Router>
   );
 }
 
