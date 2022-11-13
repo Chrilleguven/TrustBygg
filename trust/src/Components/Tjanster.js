@@ -21,16 +21,16 @@ const Tjanster = () => {
     tjanst.forEach((item, i) =>
       objectlist.push(<div className='tjanster-text'>- {item}</div>)
     );
-    return <div classname='tjanster-text-list'>{objectlist}</div>;
+    return <div className='tjanster-text-list'>{objectlist}</div>;
   }
 
   return (
     <div className='tjanster-container'>
       <div className='tjanster-text-container'>
         <div className='tjanster-header-container'>
-          <h2 className='tjanster-header' style={{ margin: 0 }}>
+          <p className='tjanster-header' style={{ margin: 0 }}>
             VÅRA TJÄNSTER
-          </h2>
+          </p>
         </div>
         <br></br>
         {laddaInOlikaTjanster(tjanst)}

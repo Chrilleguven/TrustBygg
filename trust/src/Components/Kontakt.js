@@ -5,9 +5,9 @@ const Kontakt = () => {
   return (
     <div className='kontakt-container'>
       <div className='kontakt-header-container'>
-        <h2 className='kontakt-header' style={{ margin: 0 }}>
+        <p className='kontakt-header' style={{ margin: 0 }}>
           KONTAKTA OSS
-        </h2>
+        </p>
       </div>
       <br></br>
       <div className='kontakt-form-container'>
