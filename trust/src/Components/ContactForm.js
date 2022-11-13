@@ -47,7 +47,7 @@ const ContactForm = () => {
           required
           id='standard-multiline-static'
           multiline
-          rows={4}
+          rows={2}
           label='Meddelande'
           variant='standard'
           type='text'
