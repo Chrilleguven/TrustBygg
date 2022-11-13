@@ -7,7 +7,7 @@ const Logo = () => {
       <div className='logo-container'>
         <img
           className='logo'
-          style={{ height: '75px', minWidth: '110px' }}
+          style={{ height: '75px', minWidth: '100px' }}
           src={require('../img/Ntrust.png')}
           alt=''
         />

@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
   height: 100%;
 }
@@ -132,19 +138,67 @@
 }
 
 .galleri-foto-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .galleri-album {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 #galleri-foto {
+  position: relative;
+  align-items: center;
   width: 100%;
   max-width: 500px;
   margin: 5%;
+}
+
+.hem-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hem-header-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.hem-header-container > p {
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+.hem-bullet-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.5rem;
+  margin: 5% auto;
+  width: 75%;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.bullet-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  grid-gap: 10px;
+  max-width: 100px;
+  width: 100%;
+  line-height: 1.6;
 }
 
 .logo {
@@ -154,6 +208,10 @@
   height: 100%;
   transition: 0.5s ease;
   backface-visibility: hidden;
+}
+
+.bullet-top {
+  color: rgba(0, 89, 255, 0.6);
 }
 
 .logo-container {

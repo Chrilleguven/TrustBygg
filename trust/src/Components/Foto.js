@@ -20,7 +20,7 @@ const Foto = () => {
     return <div className='galleri-album'>{imageNames}</div>;
   }
 
-  return <div>{laddaInBilderFranGalleri(images)}</div>;
+  return laddaInBilderFranGalleri(images);
 };
 
 export default Foto;
