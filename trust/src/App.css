@@ -9,7 +9,7 @@
 }
 .app-container {
   height: 100vh;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'ledger';
 }
 
 .omoss-container {
@@ -37,10 +37,18 @@
   position: relative;
   color: #ffffff;
   font-size: 1rem;
-  line-height: 1.1;
+  line-height: 1.2;
   text-align: left;
   margin: 10% 25% 0 25%;
   max-width: 600px;
+}
+
+.MuiButton-root {
+  font-family: 'ledger' !important;
+}
+
+.MuiMenuItem-root {
+  font-family: 'ledger' !important;
 }
 
 .tjanster-container {
@@ -64,13 +72,17 @@
   opacity: 0.75;
 }
 
+.tjanster-header {
+  font-size: 1.5rem;
+}
+
 .tjanster-text-container {
   position: relative;
   color: #ffffff;
   font-size: 1rem;
   line-height: 1.1;
   text-align: center;
-  margin: 10% 25% 0 25%;
+  margin: 20px 25% 0 25%;
   max-width: 600px;
 }
 
@@ -119,6 +131,10 @@
   flex-direction: column;
   justify-content: top;
   width: 100%;
+}
+
+.kontakt-header {
+  font-size: 1.5rem;
 }
 
 .kontakt-text {
@@ -171,10 +187,14 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
-.hem-header-container > p {
+#title {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+#title-2 {
   margin-top: 5px;
   font-size: 0.8rem;
 }
@@ -183,7 +203,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   margin: 5% auto;
   width: 75%;
   align-content: center;
@@ -196,7 +216,7 @@
   flex-direction: column;
   justify-content: stretch;
   grid-gap: 10px;
-  max-width: 100px;
+  max-width: 125px;
   width: 100%;
   line-height: 1.6;
 }

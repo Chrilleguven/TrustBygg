@@ -5,8 +5,8 @@ const Hem = () => {
   return (
     <div className='hem-container'>
       <div className='hem-header-container'>
-        <h2>VÅRT ARBETSSÄTT – FYRA STEG</h2>
-        <p>VI UTFÖR ALLA VÅRA PROJEKT UTEFTER DESSA FYRA STEG</p>
+        <p id='title'>VÅRT ARBETSSÄTT – FYRA STEG</p>
+        <p id='title-2'>VI UTFÖR ALLA VÅRA PROJEKT UTEFTER DESSA FYRA STEG</p>
       </div>
       <div className='hem-bullet-container'>
         <Bullet

@@ -5,9 +5,9 @@ const OmOss = () => {
     <div className='omoss-container'>
       <div className='omoss-text-container'>
         <div className='omoss-header-container'>
-          <h2 className='omoss-header' style={{ margin: 0 }}>
+          <p className='omoss-header' style={{ margin: 0 }}>
             OM FÖRETAGET
-          </h2>
+          </p>
         </div>
         <br></br>
         <div className='omoss-header'>
@@ -22,6 +22,7 @@ const OmOss = () => {
             Mångårig erfarenhet inom byggbranschen med kvalitet och nöjda kunder
             i fokus.
           </p>
+          <br />
           <p id='omoss-text'>
             Vi utför alla typer av om- och tillbyggnader åt privatpersoner,
             samfälligheter och företag. Tips och råd för renovering och
