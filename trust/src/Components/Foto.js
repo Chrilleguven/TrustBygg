@@ -3,7 +3,7 @@ import React from 'react';
 const Foto = () => {
   function importAll(r) {
     const images = [];
-    r.keys().map((item, index) => {
+    r.keys().forEach((item, index) => {
       images[item.replace('./', '')] = r(item);
     });
     return images;
