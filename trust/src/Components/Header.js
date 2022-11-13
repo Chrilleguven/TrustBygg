@@ -20,14 +20,14 @@ const Header = () => {
     setAnchorElNav(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
+  const handleCloseNavMenu = (e) => {
     setAnchorElNav(null);
   };
 
   const pages = ['HEM', 'TJÄNSTER', 'KONTAKT', 'GALLERI', 'OM OSS'];
 
   return (
-    <AppBar position='static' style={{ background: '#e6da00' }}>
+    <AppBar position='sticky' style={{ background: '#e6da00' }}>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           <Typography
@@ -100,9 +100,12 @@ const Header = () => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
+                //disabled={isActive ? false : true}
                 sx={{ my: 2, color: 'black', display: 'block' }}
                 href={
-                  page.toLowerCase() === 'hem' ? '/' : `/${page.toLowerCase()}`
+                  page.toLowerCase() === 'hem'
+                    ? '/'
+                    : `/${page.toLowerCase().replace(' ', '')}`
                 }
               >
                 {page}
