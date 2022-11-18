@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+}
+.app-container {
+  height: 100vh;
+  font-family: 'ledger';
+}
+
+.omoss-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+.omoss-container::before {
+  content: '';
+  background-image: url('https://placekitten.com/1200/800');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+
+.omoss-text-container {
+  position: relative;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: left;
+  margin: 50px 20% 0 20%;
+  max-width: 800px;
+}
+
+.MuiButton-root {
+  font-family: 'ledger' !important;
+}
+
+.MuiMenuItem-root {
+  font-family: 'ledger' !important;
+}
+
+.tjanster-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+.tjanster-container::before {
+  content: '';
+  background-image: url('./img/test.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+
+.tjanster-header {
+  font-size: 2rem;
+}
+
+.tjanster-text-container {
+  position: relative;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  text-align: center;
+  margin: 50px 25% 0 25%;
+  max-width: 600px;
+  color: rgba(238, 255, 0, 0.6);
+}
+
+.tjanster-text {
+  margin-bottom: 10px;
+}
+
+.kontakt-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+}
+
+.kontakt-header-container {
+  margin-top: 50px;
+}
+
+.kontakt-form-container {
+  position: relative;
+  display: flex;
+  margin: 5% auto;
+  width: 50%;
+  flex-wrap: wrap-reverse;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.kontakt-form {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
+}
+
+.kontakt-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-content: top;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.kontakt-header {
+  font-size: 2rem;
+}
+
+.kontakt-text-header {
+  text-overflow: ellipsis;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.kontakt-text {
+  margin-top: 15px;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+.galleri-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+}
+
+.galleri-foto-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+.galleri-album {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 5% 0 5%;
+}
+
+#galleri-foto {
+  position: inherit;
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  margin: 5%;
+}
+
+.hem-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hem-header-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#title {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+#title-2 {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.hem-bullet-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  margin: 5% auto;
+  width: 75%;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.bullet-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  grid-gap: 10px;
+  max-width: 150px;
+  width: 100%;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.logo {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.bullet-top {
+  color: rgba(0, 89, 255, 0.6);
+}
+
+.logo-container {
+  position: relative;
+  width: 100%;
+}
+
+.logo-container:hover .logo {
+  opacity: 0.2;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
