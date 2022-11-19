@@ -209,10 +209,13 @@
 #title {
   margin-top: 30px;
   font-size: 2rem;
+  text-align: center;
 }
 #title-2 {
   margin-top: 5px;
   font-size: 1rem;
+  margin: 0 5% 0 5%;
+  text-align: center;
 }
 
 .hem-bullet-container {
@@ -232,7 +235,7 @@
   flex-direction: column;
   justify-content: stretch;
   grid-gap: 10px;
-  max-width: 150px;
+  max-width: 130px;
   width: 100%;
   line-height: 1.6;
   font-size: 1rem;
