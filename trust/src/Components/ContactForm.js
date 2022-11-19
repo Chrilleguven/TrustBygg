@@ -11,6 +11,26 @@ const ColorButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+const CssTextField = styled(TextField)({
+  '& label.Mui-focused': {
+    color: 'yellow',
+  },
+  '& .MuiInput-underline:after': {
+    borderBottomColor: 'yellow',
+  },
+  '& .MuiOutlinedInput-root': {
+    '& fieldset': {
+      borderColor: 'black',
+    },
+    '&:hover fieldset': {
+      borderColor: 'yellow',
+    },
+    '&.Mui-focused fieldset': {
+      borderColor: 'yellow',
+    },
+  },
+});
+
 const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,7 +43,7 @@ const ContactForm = () => {
         backgroundColor: 'rgba(112, 112, 112, 0.45)',
         padding: '10%',
       }}
-      noValidate
+      //noValidate
       autoComplete='off'
       onSubmit={handleSubmit}
     >
@@ -34,16 +54,10 @@ const ContactForm = () => {
           width: '100%',
         }}
       >
-        <TextField required label='Namn' variant='standard' color='secondary' />
-        <TextField
-          required
-          type='email'
-          label='Email'
-          variant='standard'
-          color='secondary'
-        />
+        <CssTextField required label='Namn' variant='standard' />
+        <CssTextField required type='email' label='Email' variant='standard' />
 
-        <TextField
+        <CssTextField
           required
           id='standard-multiline-static'
           multiline
@@ -51,7 +65,6 @@ const ContactForm = () => {
           label='Meddelande'
           variant='standard'
           type='text'
-          color='secondary'
         />
         <br />
         <ColorButton variant='contained' type='submit'>

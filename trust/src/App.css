@@ -24,7 +24,7 @@
 
 .omoss-container::before {
   content: '';
-  background-image: url('https://placekitten.com/1200/800');
+  background-image: url('./img/bakgrunddsbildomoss.jpg');
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -36,7 +36,7 @@
 
 .omoss-text-container {
   position: relative;
-  color: #ffffff;
+  color: black;
   font-size: 1.5rem;
   line-height: 1.2;
   text-align: left;
@@ -63,14 +63,15 @@
 
 .tjanster-container::before {
   content: '';
-  background-image: url('./img/test.jpg');
+  filter: brightness(50%);
+  background-image: url('./img/Bakgrundsbildtrust.jpg');
   background-size: cover;
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.75;
+  background-color: rgba(0, 0, 0, 0.814);
 }
 
 .tjanster-header {
@@ -85,7 +86,7 @@
   text-align: center;
   margin: 50px 25% 0 25%;
   max-width: 600px;
-  color: rgba(238, 255, 0, 0.6);
+  color: rgba(238, 255, 0, 0.9);
 }
 
 .tjanster-text {

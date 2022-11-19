@@ -5,7 +5,7 @@ const Tjanster = () => {
     'Bygg',
     'Målning',
     'Fasader',
-    'Takrenoverng',
+    'Takrenovering',
     'Altaner',
     'Markarbeten',
     'Dränerig',
