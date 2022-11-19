@@ -21,9 +21,16 @@ const Kontakt = () => {
             </p>
           </div>
           <div className='kontakt-text'>
-            Vänligen kontakta oss via svarsformuläret, så svarar vi så fort vi
-            kan. Du kan även nå oss via telefon eller mail, kontaktuppgifterna
-            hittar du längst ner på sidan.
+            <p>
+              Vänligen kontakta oss via svarsformuläret, så svarar vi så fort vi
+              kan. Du kan även nå oss via telefon eller mail.
+            </p>
+            <br></br>
+            <a href='tel:072 441 47 12'>Tel: 072 441 47 12</a>
+            <br></br>
+            <a href='mailto: trustbygg1@gmail.com'>
+              Mejl: TrustBygg1@gmail.com
+            </a>
           </div>
         </div>
       </div>

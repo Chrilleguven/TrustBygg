@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Fragment>
         <section className='app-container'>
-          <Header></Header>
+          <Header />
           <Routes>
             <Route exact path='/' element={<Hem />} />
             <Route exact path='/tjänster' element={<Tjanster />} />
