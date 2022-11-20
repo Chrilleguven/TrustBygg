@@ -54,7 +54,7 @@ const ContactForm = () => {
       body: JSON.stringify({ name, email, message }),
     };
     const response = await fetch(
-      'http://localhost:7071/api/HttpTriggerSendEmail',
+      'http://localhost:7182/api/HttpTriggerSendEmail',
       requestOptions
     );
     const data = await response.status;
