@@ -72,6 +72,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // eslint-disable-next-line
     var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     setNameError(false);
@@ -142,7 +143,7 @@ const ContactForm = () => {
           value={name}
           onChange={updateName}
           error={nameError}
-          helperText={nameError == true ? nameErrorMessage : ''}
+          helperText={nameError === true ? nameErrorMessage : ''}
         />
         <CssTextField
           required
@@ -152,7 +153,7 @@ const ContactForm = () => {
           value={email}
           onChange={updateEmail}
           error={emailError}
-          helperText={emailError == true ? emailErrorMessage : ''}
+          helperText={emailError === true ? emailErrorMessage : ''}
         />
 
         <CssTextField
@@ -166,7 +167,7 @@ const ContactForm = () => {
           value={message}
           onChange={updateMessage}
           error={messageError}
-          helperText={messageError == true ? messageErrorMessage : ''}
+          helperText={messageError === true ? messageErrorMessage : ''}
         />
         <br />
         <ColorButton variant='contained' type='submit'>
