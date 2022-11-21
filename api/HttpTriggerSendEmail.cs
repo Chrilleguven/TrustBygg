@@ -42,7 +42,7 @@ namespace Company.Function
                 PlainTextContent = "from: " + email + "message: " + message,
                 HtmlContent = "<html><body><div>from: " + email + "</div><div>message: " + message + "</div></body></html>"
             };
-            msg.AddTo(new EmailAddress("christopherguven97@gmail.com", "chris"));
+            msg.AddTo(new EmailAddress("trustbygg1@gmail.com", "Trust"));
 
             req.HttpContext.Response.Headers.Add("Content-Type", "123123");
 
